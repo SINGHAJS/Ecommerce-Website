@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="src/css/products-style.css" />
+    <link rel="stylesheet" href="src/css/home-style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6bb7aa2be9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="src/js/script.js"></script>
+
+    <title>AJS Electronics</title>
+  </head>
+  <body>
+    <!--------------------------------------------------Navigation Bar-->
+    <nav class="navbar--container">
+      <h1 class="navbar--heading">AJS Electronics</h1>
+      <ul class="navbar--list">
+        <a class="nav-link" href="index.html"
+          ><li class="navbar--element">Home</li></a
+        >
+        <a class="nav-link" href="products.html"
+          ><li class="navbar--element">Products</li></a
+        >
+        <a class="nav-link" href="faq-page.html"
+          ><li class="navbar--element">FAQ</li></a
+        >
+        <a class="nav-link" href="about-us.html">
+          <li class="navbar--element">About Us</li></a
+        >
+
+        <button class="viewCart--btn">
+          <a class="view--cart-link" href="cart-view.html"
+            >View Cart <span class="cart-item-quantity">0</span></a
+          >
+        </button>
+      </ul>
+    </nav>
+
+    <!------------------------------------------------Products -->
+    <header class="products--page-header">
+      <h1 class="products--page-title">Our Products</h1>
+      <div class="seach-bar">
+        <form action="" onsubmit="return false">
+          <input type="text" id="search" placeholder="Search Products" />
+        </form>
+      </div>
+      <div class="filter--container">
+        <a href="#" class="filter--btn active--filter-btn" data-filter="all"
+          >All</a
+        >
+        <a href="#" class="filter--btn" data-filter="tv">TV & Video</a>
+        <a href="#" class="filter--btn" data-filter="computer">Computers</a>
+        <a href="#" class="filter--btn" data-filter="camera">Camera</a>
+        <a href="#" class="filter--btn" data-filter="watch">Watch</a>
+        <a href="#" class="filter--btn" data-filter="phone">Phones</a>
+      </div>
+    </header>
+
+    <main class="products--main">
+      <div class="store--products-container">
+        <!------------------------------------------------Product Message -->
+        <div class="product--message-container">
+          <h1>PRODUCT NOT FOUND ☹️</h1>
+          <p>Sorry, We did not find the product you were looking for!</p>
+        </div>
+        <div class="store--products--inner-container" id="store--products">
+          <div class="product tv">
+            <img
+              class="product--img"
+              alt="tv 1"
+              src="src/img/product-tv-1.jpeg"
+            />
+            <div class="product--detail">
+              <h3 class="product--name">Smart TV — 50 inch 4K LED</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Your home entertainment is about to get smarter with the new 4K
+                HDR Smart TV. Bringing you more than just a world of colours and
+                fun variety, as well as its coveniently smart features and
+                incredible sound.
+              </p>
+              <p class="product--price">$999.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product tv">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-tv-2.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Television 40 Inch HD LED</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Affordable TV with some of the latest technologies to help you
+                get the best of entertainment
+              </p>
+              <p class="product--price">$549.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product tv">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-tv-3.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Smart Television 75 Inch 4K LED 2021</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="product--description">
+                The latest smart Television allows you to the enjoy fine detail
+                of 4K resolution with precise color control through Dolby Vision
+                technology to achieve stunning picture quality
+              </p>
+              <p class="product--price">$1599.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product computer">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-computer-1.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Laptop 8GB RAM 256GB SSD Laptop</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Stay connected to what matters most with long-lasting battery
+                life and a thin micro-edge bezel design. Built to keep you
+                productive and entertained from anywhere, the HP 15 Laptop
+                features reliable performance and an expansive display, so you
+                can stream, surf and speed through tasks.
+              </p>
+              <p class="product--price">$799.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product computer">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-computer-2.jpeg"
+            />
+            <div class="product--detail">
+              <h3>
+                MacBook Pro 13-inch: Apple M1 Chip with 8 Core CPU and 8 Core
+                GPU 512GB storage - Space Grey
+              </h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="product--description">
+                The M1 chip comes to MacBook Pro. Bringing far more power.
+                Incredible graphics. An advanced Neural Engine for enhanced
+                machine learning. Superfast unified memory. And up to 20 hours
+                of battery life - the longest-ever battery life in a Mac.
+              </p>
+              <p class="product--price">$2549.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product computer">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-computer-3.jpeg"
+            />
+            <div class="product--detail">
+              <h3>
+                Computer Intel Pentium 7505 Processor 8GB RAM 1TB HDD Storage
+                All in One Desktop
+              </h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Explore The World With The Intel Pentium 7505 Processor 8GB RAM
+                1TB HDD Storage All in One Desktop.
+              </p>
+              <p class="product--price">$1449.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product camera">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-camera-1.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Camera 90D DSLR Camera with 18-55mm Lens</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Advanced enthusiasts with a high level of shooting skills
+                looking to upgrade from 70D, 80D or 7D Mark II.Operability built
+                into the K437 suitable for the advanced user with the
+                multi-controller and a shutter release mechanism similar to high
+                end EOS models.
+              </p>
+              <p class="product--price">$2599.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product camera">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-camera-2.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Camera Powershot SX540HS</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Designed for travellers wanting to zoom into their subjects with
+                ease,you'll capture the beauty of your surrounds thanks to the
+                amazing 50x (24-1200mm) zoom power of the Powershot SX540 HS
+                camera
+              </p>
+              <p class="product--price">$799.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product camera">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-camera-3.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Camera Interchangeable Lens Vlog Camera with 16-50mm Lens</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Camera packed with all the vlogging features that were made
+                famous in the ZV-1 but with the added flexibility of being able
+                to inter-change lenses.
+              </p>
+              <p class="product--price">$1299.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product watch">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-watch-1.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Garmin Instinct GPS Watch Graphite</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                When you can rely on Instinct, the world can rely on you. This
+                rugged, reliable outdoor GPS watch is built to the U.S. military
+                standard 810G for thermal, shock and water resistance (rated to
+                100 meters).
+              </p>
+              <p class="product--price">$349.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product watch">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-watch-2.jpeg"
+            />
+            <div class="product--detail">
+              <h3>
+                Apple Watch SE GPS, 44mm Space Grey Aluminium Case with Midnight
+                Sport Band - Regular
+              </h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Heavy on features. Light on price. With powerful features to
+                help keep you connected, active, healthy, and safe, Apple Watch
+                SE is a lot of watch. For a lot less than you expected.
+              </p>
+              <p class="product--price">$529.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="product watch">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-watch-3.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Fitbit Inspire 2 Black/Black</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Every part of your day impacts your goals, so Fitbit Inspire 2
+                tracks all-day steps, distance and calories burned. Inspire 2
+                personalises your heart rate zones based on your age and resting
+                heart rate to show whether you're in fat burn, cardio or peak
+                zone.
+              </p>
+              <p class="product--price">$149.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+
+          <div class="product phone">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-phone-1.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Samsung Galaxy S21+ 5G Phantom Black</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                Meet the Galaxy S21+. Unique contour-cut cameras create a
+                revolution in photography. Capture cinematic 8K video and snap
+                high-resolution photos, right out of the video. with cameras up
+                to 64MP cameras, our fastest chip, our strongest glass and an
+                all-day battery, things just got epic.
+              </p>
+              <p class="product--price">$1299.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="product phone">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-phone-2.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Apple iPhone 12 Pro Max 256GB - Pacific Blue</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p class="product--description">
+                5G speed. A14 Bionic, the fastest chip in a smartphone. And a
+                Pro camera system that takes low-light photography to the next
+                level - with an even bigger jump on iPhone 12 Pro Max.
+              </p>
+              <p class="product--price">$1849.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+          <div class="product phone">
+            <img
+              class="product--img"
+              alt="product 2"
+              src="src/img/product-phone-3.jpeg"
+            />
+            <div class="product--detail">
+              <h3>Google Pixel 5a (128GB, Black)</h3>
+              <div class="ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p class="product--description">
+                The Google Pixel 5a has the biggest battery and display of the
+                a-series, dual camera and so much more. Backed by the iconic
+                Titan M chip, Pixel 5a with 5G is secure to the core.
+              </p>
+              <p class="product--price">$1249.00</p>
+              <button class="add-to-cart-btn">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!------------------------------------------------Footer -->
+    <footer id="footer">
+      <div class="social--media">
+        <h6 class="footer--heading">Follow Us</h6>
+        <div class="media--icons">
+          <a class="media--link" href="#"
+            ><i class="icon-4x fab fa-facebook-square"></i
+          ></a>
+          <a class="media--link" href="#"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a class="media--link" href="#"><i class="fab fa-linkedin"></i></a>
+          <a class="media--link" href="#"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+        </div>
+      </div>
+      <div class="useful-links usefull--links--col-1">
+        <h6 class="footer--heading">Useful Links</h6>
+        <ul class="footer--list">
+          <a class="quick-page-link" href="faq-page.html"
+            ><li class="footer--list-element">Careers</li></a
+          >
+          <a class="quick-page-link" href="faq-page.html"
+            ><li class="footer--list-element">Order Status</li></a
+          >
+
+          <a class="quick-page-link" href="faq-page.html"
+            ><li class="footer--list-element">My Account</li></a
+          >
+          <a class="quick-page-link" href="faq-page.html"
+            ><li class="footer--list-element">Gift Cards</li></a
+          >
+        </ul>
+      </div>
+      <div class="useful-links usefull--links--col-1">
+        <h6 class="footer--heading">Useful Links</h6>
+        <ul class="footer--list">
+          <a class="quick-page-link" href="faq-page.html"
+            ><li class="footer--list-element">FAQ</li></a
+          >
+          <a class="quick-page-link" href="products.html"
+            ><li class="footer--list-element">Best Sellers</li></a
+          >
+
+          <a class="quick-page-link" href="contact-us.html"
+            ><li class="footer--list-element">Contact Us</li></a
+          >
+          <a class="quick-page-link" href="faq-page.html">
+            <li class="footer--list-element">Billing</li></a
+          >
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+:root {
+  --background-color-body: #f3f3f3;
+  --background--color-primary: #f76707;
+  --background--color-secondary: #ff922b;
+  --background--color-dark-blue: #000026;
+  --text-color-primary: #f8f9fa;
+  --text-color-secondary: #d9480f;
+  --text-color-extra: #868e96;
+}
+
+.faqPage--hero {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  width: 100%;
+  height: 90vh;
+
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url('https://images.unsplash.com/photo-1486520299386-6d106b22014b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhY2tncm91bmQlMjBlY29tbWVyY2V8ZW58MHwwfDB8Ymx1ZXw%3D&auto=format&fit=crop&w=800&q=60');
+
+  background-size: cover;
+}
+
+.faq--section {
+  min-height: 100vh;
+  width: 80%;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 5rem;
+  margin: 2rem 0;
+  color: var(--text-color-secondary);
+}
+
+.faq {
+  max-width: 700px;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--text-color-secondary);
+  cursor: pointer;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question h3 {
+  font-size: 1.8rem;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.4s ease;
+}
+
+.answer p {
+  padding-top: 1.6rem;
+  line-height: 1.6;
+  font-size: 1.4rem;
+}
+
+.faq.active .answer {
+  max-height: 300px;
+}
+
+.faq--arrow {
+  transition: transform 0.5s ease-in;
+  color: #000026;
+}
+
+.faq.active .faq--arrow {
+  transform: rotate(180deg);
+  color: var(--text-color-secondary);
+}
+
+.q--num {
+  transition: all 0.5s ease-in;
+}
+
+.faq.active .q--num {
+  color: #d9480f;
+}
